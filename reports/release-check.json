@@ -2,7 +2,7 @@
   "skill": "daxuan-academic-polisher",
   "version": "0.2.0",
   "local_package": true,
-  "git_repository": false,
+  "git_repository": true,
   "default_branch": "main",
   "remote_install": true,
   "checks": {
@@ -13,13 +13,14 @@
     "meta_validator": "pass with 3 non-blocking lexical README warnings",
     "readme_portability": "pass: no private absolute paths; install command points to intended repo",
     "showcase": "pass: authored SVG/GIF fixture; model_run false",
-    "github_publication": "pending repository creation and PR review",
+    "github_publication": "pass: public repository exists; PR #1 is open and CLEAN",
     "luban_structure": "pass: check-skill-repo.sh 14 pass, 0 warnings, 0 failures",
     "repository_bootstrap": "pass: public repository created and main baseline pushed",
-    "feature_branch_push": "pass: feature branch pushed; PR pending",
+    "feature_branch_push": "pass: feature branch pushed; PR #1 open",
     "remote_install": "pass: public main installed with npx skills add; old name absent from Codex global list"
   },
   "release_gate": "feature branch and pull request prepared; do not claim merged release",
   "repository_url": "https://github.com/DaXuanGarden/daxuan-academic-polisher",
-  "feature_branch": "codex/daxuan-academic-polisher"
+  "feature_branch": "codex/daxuan-academic-polisher",
+  "pull_request_url": "https://github.com/DaXuanGarden/daxuan-academic-polisher/pull/1"
 }
