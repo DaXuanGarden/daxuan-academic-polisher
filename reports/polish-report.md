@@ -48,8 +48,8 @@ missing/changed and unexpected/added tokens.
 ## 7. Reproducible outputs
 
 `examples/` contains synthetic fixtures. `scripts/build_showcase.py` generated
-`assets/showcase/polish-card.svg` and `assets/showcase/demo.gif`; `reports/showcase-evidence.json`
-records `model_run: false`. The visual is a contract replay, not a provider-backed result.
+`assets/showcase/polishing-workflow.svg`; `reports/showcase-evidence.json`
+records `model_run: false`. The visual is a static contract map, not a provider-backed result.
 
 ## 8. Verification performed
 
@@ -57,7 +57,8 @@ The final local run passed `scripts/validate_package.py`, `scripts/run_regressio
 cases, protected fixture and negative drift), trigger evaluation (21/21), and Skill IR export
 with populated workflow arrays. The meta-skill validator exited 0 with three lexical README
 warnings about examples/verification/upstream wording; the content is present and the warnings
-are recorded rather than hidden. The GitHub workflow repeats dependency-free package and
+are recorded rather than hidden. Luban structure checking reports 12 passes and one deliberate
+warning because the opaque GIF was replaced with the readable workflow SVG. The GitHub workflow repeats dependency-free package and
 regression checks on supported Python versions. A public-main `npx skills add` installation
 completed successfully; `reports/install-evidence.json` records the command and old-name check.
 

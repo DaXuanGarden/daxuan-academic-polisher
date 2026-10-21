@@ -1,7 +1,13 @@
 {
-  "evidence_kind": "authored_fixture",
+  "evidence_kind": "generated_workflow_diagram",
   "model_run": false,
-  "svg": "assets/showcase/polish-card.svg",
-  "gif_built": true,
-  "source_case": "zh_filler_and_claim_strength"
+  "artifact": "assets/showcase/polishing-workflow.svg",
+  "palette_source": "Daxuan scientific-assets methodology-blue (adapted, self-contained)",
+  "flow": [
+    "input",
+    "source-language routing",
+    "register loading",
+    "evidence-preserving polish",
+    "body plus notes"
+  ]
 }

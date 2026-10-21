@@ -12,9 +12,9 @@
     "skill_ir_export": "pass: workflow arrays populated; name daxuan-academic-polisher 0.2.0",
     "meta_validator": "pass with 3 non-blocking lexical README warnings",
     "readme_portability": "pass: no private absolute paths; install command points to intended repo",
-    "showcase": "pass: authored SVG/GIF fixture; model_run false",
+    "showcase": "pass: generated static workflow SVG from the skill contract; GIF removed because it obscured the process",
     "github_publication": "pass: public repository exists; PR #1 is open and CLEAN",
-    "luban_structure": "pass: check-skill-repo.sh 14 pass, 0 warnings, 0 failures",
+    "luban_structure": "pass: 12 checks; 1 deliberate warning because the misleading GIF was replaced by a static workflow SVG",
     "repository_bootstrap": "pass: public repository created and main baseline pushed",
     "feature_branch_push": "pass: feature branch pushed; PR #1 open",
     "remote_install": "pass: public main installed with npx skills add; old name absent from Codex global list"

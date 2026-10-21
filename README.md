@@ -10,17 +10,17 @@
 
 **把已有的学术段落改得更清楚、凝练、可读，同时保留语言、事实、数字、引用、术语、主张强度和段落结构。**
 
-[看效果](#看效果) · [安装](#安装) · [触发方式](#触发方式) · [验证](#验证) · [边界](#边界)
+[看流程](#看流程) · [安装](#安装) · [触发方式](#触发方式) · [验证](#验证) · [边界](#边界)
 
 </div>
 
 ---
 
-## 看效果 / Examples
+## 看流程 / Workflow
 
-![中文前后对照的可复现契约夹具](assets/showcase/demo.gif)
+![Daxuan Academic Polisher source-language polishing workflow](assets/showcase/polishing-workflow.svg)
 
-这个 GIF 回放的是仓库里的合成示例，用来展示输出契约和保真检查；它不是模型运行录屏，也不是语言质量基准。对应的原文和结果见 [examples/](examples/README.md)，生成命令是 `python3 scripts/build_showcase.py`。
+这张流程图展示 skill 实际如何工作：先读草稿本身判断主导语言，再加载中文或英文语体规则；润色阶段保留数字、单位、统计量、引用和标识符，最后先返回正文，再给最多五条核对说明。它是根据 skill 契约生成的静态图，不是模型运行录屏。运行 `python3 scripts/build_showcase.py` 可重新生成。颜色沿用之前 Daxuan 科学素材的 methodology-blue 调色板，但流程图本身不依赖另一个仓库。合成输入和输出夹具仍在 [examples/](examples/README.md)。
 
 ## 它解决什么问题
 
@@ -117,7 +117,7 @@ references/                      # 中英文风格、章节语体、保真和 st
 scripts/                         # 可移植的检测、保真、回归和展示脚本
 evals/                           # 触发、路由和输出契约夹具
 examples/                        # 不含私密数据的合成示例
-assets/showcase/                 # 由夹具生成的 SVG/GIF 展示
+assets/showcase/                 # 由契约生成的 SVG 流程图
 reports/                         # 研究、验证、证据和发布记录
 ```
 
