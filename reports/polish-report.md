@@ -1,6 +1,6 @@
 # Luban polish report — Daxuan Academic Polisher 0.2.0
 
-> Review state: prepared for a GitHub branch/PR. A merge, tag, release, or registry publication is a separate gate.
+> Review state: PR [#1](https://github.com/DaXuanGarden/daxuan-academic-polisher/pull/1) is open, CLEAN, and CI-green. A merge, tag, release, or registry publication is a separate gate.
 
 ## 1. Premise
 
@@ -48,8 +48,8 @@ missing/changed and unexpected/added tokens.
 ## 7. Reproducible outputs
 
 `examples/` contains synthetic fixtures. `scripts/build_showcase.py` generated
-`assets/showcase/polish-card.svg` and `assets/showcase/demo.gif`; `reports/showcase-evidence.json`
-records `model_run: false`. The visual is a contract replay, not a provider-backed result.
+`assets/showcase/polishing-workflow.svg`; `reports/showcase-evidence.json`
+records `model_run: false`. The visual is a static contract map, not a provider-backed result.
 
 ## 8. Verification performed
 
@@ -57,9 +57,10 @@ The final local run passed `scripts/validate_package.py`, `scripts/run_regressio
 cases, protected fixture and negative drift), trigger evaluation (21/21), and Skill IR export
 with populated workflow arrays. The meta-skill validator exited 0 with three lexical README
 warnings about examples/verification/upstream wording; the content is present and the warnings
-are recorded rather than hidden. The GitHub workflow repeats dependency-free package and
-regression checks on supported Python versions. Remote `npx skills add` verification remains
-pending until a public revision exists.
+are recorded rather than hidden. Luban structure checking reports 12 passes and one deliberate
+warning because the opaque GIF was replaced with the readable workflow SVG. The GitHub workflow repeats dependency-free package and
+regression checks on supported Python versions. A public-main `npx skills add` installation
+completed successfully; `reports/install-evidence.json` records the command and old-name check.
 
 ## 9. Nine-dimension score
 
@@ -86,10 +87,11 @@ only.
 ## 11. GitHub publication plan
 
 The current workspace was not a Git repository and the discovered `gwas-for-paper-skills`
-repository is a narrowly scoped private GWAS controller. The aligned target is a new standalone
-`DaXuanGarden/daxuan-academic-polisher` repository. The reviewable action is a feature branch
-and pull request; the default branch, tag, release, and registry publication remain explicit
-approval gates.
+repository is a narrowly scoped private GWAS controller. The aligned target is the standalone
+[DaXuanGarden/daxuan-academic-polisher](https://github.com/DaXuanGarden/daxuan-academic-polisher)
+repository. [PR #1](https://github.com/DaXuanGarden/daxuan-academic-polisher/pull/1) carries the
+feature branch and is CI-green; the default branch, tag, release, and registry publication
+remain explicit approval gates.
 
 ## 12. Known limits and watch list
 
@@ -100,7 +102,7 @@ references, and add a Chinese/English human review panel before changing maturit
 
 ## 13. Decision
 
-The package is ready for a reviewable GitHub branch/PR after the final local checks. It is not
-ready to claim model-quality superiority or a merged release. Keep the standalone scope and
+The package is ready for review in the open GitHub PR. It is not ready to claim model-quality
+superiority or a merged release. Keep the standalone scope and
 revisit a suite split only when real usage shows that section- or journal-specific guidance
 needs separate triggers.

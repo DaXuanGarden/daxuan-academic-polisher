@@ -30,7 +30,7 @@ Luban's three directions were evaluated:
 - Added an optional style-anchor reference and restored useful Chinese/English section rules.
 - Corrected fixtures so polish output retains facts and includes a body before notes.
 - Added portable validation, routing/preservation regressions, CI metadata, examples and a
-  fixture-only SVG/GIF showcase.
+  fixture-only SVG workflow showcase.
 
 ## Verification boundary
 

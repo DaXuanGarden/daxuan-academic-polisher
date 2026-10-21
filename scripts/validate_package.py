@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-REQUIRED = ["SKILL.md", "README.md", "LICENSE", "manifest.json", "agents/interface.yaml", "agents/openai.yaml", "examples/README.md", "evals/routing_cases.json"]
+REQUIRED = ["SKILL.md", "README.md", "LICENSE", "manifest.json", "agents/interface.yaml", "agents/openai.yaml", "examples/README.md", "assets/showcase/polishing-workflow.svg", "evals/routing_cases.json"]
 
 
 def fail(message: str) -> None:
