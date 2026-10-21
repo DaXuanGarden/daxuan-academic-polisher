@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "local_package": true,
   "git_repository": false,
-  "default_branch": null,
+  "default_branch": "main",
   "remote_install": false,
   "checks": {
     "self_contained_validation": "pass: scripts/validate_package.py",
@@ -14,7 +14,11 @@
     "readme_portability": "pass: no private absolute paths; install command points to intended repo",
     "showcase": "pass: authored SVG/GIF fixture; model_run false",
     "github_publication": "pending repository creation and PR review",
-    "luban_structure": "pass: check-skill-repo.sh 14 pass, 0 warnings, 0 failures"
+    "luban_structure": "pass: check-skill-repo.sh 14 pass, 0 warnings, 0 failures",
+    "repository_bootstrap": "pass: public repository created and main baseline pushed",
+    "feature_branch_push": "pass: feature branch pushed; PR pending"
   },
-  "release_gate": "feature branch and pull request prepared; do not claim merged release"
+  "release_gate": "feature branch and pull request prepared; do not claim merged release",
+  "repository_url": "https://github.com/DaXuanGarden/daxuan-academic-polisher",
+  "feature_branch": "codex/daxuan-academic-polisher"
 }
