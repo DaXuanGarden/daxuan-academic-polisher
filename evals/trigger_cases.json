@@ -1,0 +1,165 @@
+{
+  "recommended_threshold": 0.67,
+  "description_required_concepts": [
+    "domain",
+    "action",
+    "input"
+  ],
+  "positive_concepts": {
+    "domain": [
+      "academic",
+      "manuscript",
+      "论文",
+      "学术",
+      "scientific",
+      "journal",
+      "期刊",
+      "NSFC",
+      "grant"
+    ],
+    "action": [
+      "polish",
+      "edit",
+      "tighten",
+      "improve",
+      "润色",
+      "修改",
+      "精炼",
+      "提升",
+      "改得更凝练",
+      "紧凑",
+      "compact",
+      "concise"
+    ],
+    "input": [
+      "draft",
+      "passage",
+      "paragraph",
+      "text",
+      "manuscript",
+      "草稿",
+      "段落",
+      "正文",
+      "文章",
+      "摘要",
+      "discussion",
+      "results",
+      "methods"
+    ],
+    "language": [
+      "Chinese",
+      "English",
+      "中文",
+      "英文",
+      "中英混杂"
+    ]
+  },
+  "negative_patterns": [
+    "翻译一下",
+    "翻译成英文",
+    "翻译成中文",
+    "translate only",
+    "translate this",
+    "总结一下",
+    "summarize",
+    "审稿这篇论文",
+    "peer review",
+    "查找文献",
+    "literature search",
+    "修复 latex 排版",
+    "layout only",
+    "求职信",
+    "润色软件"
+  ],
+  "should_trigger": [
+    {
+      "text": "请润色下面这段中文论文引言，保持引用和数据不变。",
+      "family": "zh_manuscript"
+    },
+    {
+      "text": "Polish this English Results paragraph; preserve every p-value and citation.",
+      "family": "en_results"
+    },
+    {
+      "text": "把我的中文 NSFC 立项依据改得更凝练，保持原意。",
+      "family": "zh_grant"
+    },
+    {
+      "text": "Improve the English abstract of my academic manuscript for a journal submission without adding results.",
+      "family": "en_abstract"
+    },
+    {
+      "text": "请根据附件里的中文讨论部分做学术表达提升。",
+      "family": "zh_attachment"
+    },
+    {
+      "text": "Polish the Methods section in English and retain all units and identifiers.",
+      "family": "en_methods"
+    },
+    {
+      "text": "中英混杂的学术段落请按主要语言分别润色。",
+      "family": "mixed_language"
+    },
+    {
+      "text": "还是太啰嗦，请把上一版英文论文段落再压缩一轮。",
+      "family": "en_follow_up"
+    },
+    {
+      "text": "请把这段中文医学论文结果改得更紧凑，保留 1,204 例、p<0.001 和 Figure 2。",
+      "family": "zh_technical_tokens"
+    },
+    {
+      "text": "Polish this English paragraph containing DOI:10.1234/abc and rs12345; keep both identifiers.",
+      "family": "en_technical_tokens"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "text": "把这篇论文翻译成英文。",
+      "family": "translation_only"
+    },
+    {
+      "text": "总结一下这篇论文。",
+      "family": "summary_only"
+    },
+    {
+      "text": "请审稿这篇论文并给出接收建议。",
+      "family": "peer_review"
+    },
+    {
+      "text": "请修复这篇论文的 LaTeX 排版和浮动体。",
+      "family": "layout"
+    },
+    {
+      "text": "请查找支持这句话的文献。",
+      "family": "literature_search"
+    },
+    {
+      "text": "帮我从零写一篇英文论文。",
+      "family": "new_draft"
+    },
+    {
+      "text": "我有一段学术英文。",
+      "family": "no_action"
+    },
+    {
+      "text": "请推荐学术润色软件，不要编辑我的段落。",
+      "family": "tool_recommendation"
+    }
+  ],
+  "near_neighbor": [
+    {
+      "text": "请审计论文中的引用是否真实存在。",
+      "family": "citation_audit"
+    },
+    {
+      "text": "请把论文改成 Nature 的 LaTeX 模板。",
+      "family": "format_conversion"
+    },
+    {
+      "text": "请根据结果撰写新的 Discussion。",
+      "family": "new_section_draft"
+    }
+  ],
+  "description": "Lexical trigger fixtures only; they do not prove model routing or polishing quality."
+}

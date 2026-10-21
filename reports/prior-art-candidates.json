@@ -1,0 +1,937 @@
+{
+  "ok": false,
+  "complete": false,
+  "researched_at": "2026-10-20",
+  "queries": [
+    "bilingual academic manuscript polishing Chinese English",
+    "scientific manuscript language editing",
+    "academic writing style editor agent skill",
+    "preserve citations numbers manuscript revision"
+  ],
+  "metric_semantics": {
+    "skills_sh_installs": "ecosystem install telemetry; not ratings or correctness",
+    "skillsmp_repo_stars": "GitHub repository stars; not installs, ratings, or skill-specific quality",
+    "cross_catalog_score": "not calculated; metrics remain separate"
+  },
+  "query_runs": [
+    {
+      "query": "bilingual academic manuscript polishing Chinese English",
+      "skills_sh": "error",
+      "skillsmp": "ok",
+      "skills_sh_error": "skills.sh returned no parseable candidates",
+      "skillsmp_candidates": 10
+    },
+    {
+      "query": "scientific manuscript language editing",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 4,
+      "skillsmp_candidates": 5
+    },
+    {
+      "query": "academic writing style editor agent skill",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 1,
+      "skillsmp_candidates": 7
+    },
+    {
+      "query": "preserve citations numbers manuscript revision",
+      "skills_sh": "error",
+      "skillsmp": "ok",
+      "skills_sh_error": "skills.sh returned no parseable candidates",
+      "skillsmp_candidates": 7
+    }
+  ],
+  "candidate_family_count": 32,
+  "candidates": [
+    {
+      "family_key": "vercel-labs/skills:find-skills",
+      "queries": [
+        "academic writing style editor agent skill"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "academic writing style editor agent skill",
+        "owner_repo": "vercel-labs/skills",
+        "skill_name": "find-skills",
+        "family_key": "vercel-labs/skills:find-skills",
+        "skills_sh_installs": 4000000,
+        "skills_sh_installs_display": "4M",
+        "skills_sh_url": "https://skills.sh/vercel-labs/skills/find-skills"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-polishing",
+      "queries": [
+        "scientific manuscript language editing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific manuscript language editing",
+        "owner_repo": "yuan1z0825/nature-skills",
+        "skill_name": "nature-polishing",
+        "family_key": "yuan1z0825/nature-skills:nature-polishing",
+        "skills_sh_installs": 17000,
+        "skills_sh_installs_display": "17K",
+        "skills_sh_url": "https://skills.sh/yuan1z0825/nature-skills/nature-polishing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "qtchen730/nature-skills:nature-polishing",
+      "queries": [
+        "scientific manuscript language editing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific manuscript language editing",
+        "owner_repo": "qtchen730/nature-skills",
+        "skill_name": "nature-polishing",
+        "family_key": "qtchen730/nature-skills:nature-polishing",
+        "skills_sh_installs": 4,
+        "skills_sh_installs_display": "4",
+        "skills_sh_url": "https://skills.sh/qtchen730/nature-skills/nature-polishing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "jasperpwang/lab-codex-skills:nature-polishing",
+      "queries": [
+        "scientific manuscript language editing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific manuscript language editing",
+        "owner_repo": "jasperpwang/lab-codex-skills",
+        "skill_name": "nature-polishing",
+        "family_key": "jasperpwang/lab-codex-skills:nature-polishing",
+        "skills_sh_installs": 3,
+        "skills_sh_installs_display": "3",
+        "skills_sh_url": "https://skills.sh/jasperpwang/lab-codex-skills/nature-polishing"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "mictx/academic-phrasebank-skill:academic-phrasebank-skill",
+      "queries": [
+        "scientific manuscript language editing"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "scientific manuscript language editing",
+        "owner_repo": "mictx/academic-phrasebank-skill",
+        "skill_name": "academic-phrasebank-skill",
+        "family_key": "mictx/academic-phrasebank-skill:academic-phrasebank-skill",
+        "skills_sh_installs": 2,
+        "skills_sh_installs_display": "2",
+        "skills_sh_url": "https://skills.sh/mictx/academic-phrasebank-skill/academic-phrasebank-skill"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:scientific-db-pubmed-database",
+      "queries": [
+        "scientific manuscript language editing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scientific-db-pubmed-database",
+        "author": "affaan-m",
+        "description": "Direct PubMed and NCBI E-utilities search workflows for biomedical literature, MeSH queries, PMID lookup, citation retrieval, and API-backed literature monitoring. Use when a task needs biomedical literature from PubMed rather than general web search.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/scientific-db-pubmed-database",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-scientific-db-pubmed-database",
+        "repo_stars": 279616,
+        "catalog_updated_at": "2026-09-10T09:45:09+00:00",
+        "source_key": "affaan-m/ecc:skills/scientific-db-pubmed-database",
+        "family_key": "affaan-m/ecc:scientific-db-pubmed-database",
+        "aliases": [
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/scientific-db-pubmed-database"
+          }
+        ],
+        "query": "scientific manuscript language editing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:scientific-db-uspto-database",
+      "queries": [
+        "scientific manuscript language editing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scientific-db-uspto-database",
+        "author": "affaan-m",
+        "description": "USPTO patent and trademark data workflow for official record lookup, PatentSearch queries, TSDR checks, assignment data, and reproducible IP research logs. Use when a task needs official United States patent or trademark records from USPTO systems.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/scientific-db-uspto-database",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-scientific-db-uspto-database",
+        "repo_stars": 279616,
+        "catalog_updated_at": "2026-09-10T09:45:09+00:00",
+        "source_key": "affaan-m/ecc:skills/scientific-db-uspto-database",
+        "family_key": "affaan-m/ecc:scientific-db-uspto-database",
+        "aliases": [
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/scientific-db-uspto-database"
+          }
+        ],
+        "query": "scientific manuscript language editing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:scientific-pkg-gget",
+      "queries": [
+        "scientific manuscript language editing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scientific-pkg-gget",
+        "author": "affaan-m",
+        "description": "gget CLI and Python workflow for quick genomic database queries, sequence lookup, BLAST-style searches, enrichment checks, and reproducible bioinformatics evidence logs. Use when a task needs quick bioinformatics lookup across genomic reference databases with the gget CLI or Python package.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/scientific-pkg-gget",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-scientific-pkg-gget",
+        "repo_stars": 279616,
+        "catalog_updated_at": "2026-09-10T09:45:09+00:00",
+        "source_key": "affaan-m/ecc:skills/scientific-pkg-gget",
+        "family_key": "affaan-m/ecc:scientific-pkg-gget",
+        "aliases": [
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/scientific-pkg-gget"
+          }
+        ],
+        "query": "scientific manuscript language editing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:scientific-thinking-literature-review",
+      "queries": [
+        "academic writing style editor agent skill",
+        "scientific manuscript language editing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scientific-thinking-literature-review",
+        "author": "affaan-m",
+        "description": "Systematic literature-review workflow for academic, biomedical, technical, and scientific topics, including search planning, source screening, synthesis, citation checks, and evidence logging. Use when the task is to find, screen, synthesize, and cite a body of academic or technical literature.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/scientific-thinking-literature-review",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-scientific-thinking-literature-review",
+        "repo_stars": 279616,
+        "catalog_updated_at": "2026-09-10T09:45:09+00:00",
+        "source_key": "affaan-m/ecc:skills/scientific-thinking-literature-review",
+        "family_key": "affaan-m/ecc:scientific-thinking-literature-review",
+        "aliases": [
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/scientific-thinking-literature-review"
+          }
+        ],
+        "query": "scientific manuscript language editing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:scientific-thinking-scholar-evaluation",
+      "queries": [
+        "academic writing style editor agent skill",
+        "scientific manuscript language editing"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "scientific-thinking-scholar-evaluation",
+        "author": "affaan-m",
+        "description": "Structured scholarly-work evaluation for papers, proposals, literature reviews, methods sections, evidence quality, citation support, and research-writing feedback. Use when evaluating academic or scientific work — papers, proposals, methods sections, or evidence quality — against a repeatable rubric.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/scientific-thinking-scholar-evaluation",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-scientific-thinking-scholar-evaluation",
+        "repo_stars": 279616,
+        "catalog_updated_at": "2026-09-10T09:45:09+00:00",
+        "source_key": "affaan-m/ecc:skills/scientific-thinking-scholar-evaluation",
+        "family_key": "affaan-m/ecc:scientific-thinking-scholar-evaluation",
+        "aliases": [
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/scientific-thinking-scholar-evaluation"
+          }
+        ],
+        "query": "scientific manuscript language editing"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:strategic-compact",
+      "queries": [
+        "preserve citations numbers manuscript revision"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "strategic-compact",
+        "author": "affaan-m",
+        "description": "Suggests manual context compaction at logical intervals to preserve context through task phases rather than arbitrary auto-compaction. Use when a session is approaching a context limit and a task phase is a natural place to compact.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/strategic-compact",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-strategic-compact",
+        "repo_stars": 279616,
+        "catalog_updated_at": "2026-08-25T01:26:22+00:00",
+        "source_key": "affaan-m/ecc:skills/strategic-compact",
+        "family_key": "affaan-m/ecc:strategic-compact",
+        "aliases": [
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-TW/skills/strategic-compact"
+          },
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-TW/skills/strategic-compact"
+          },
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/strategic-compact"
+          },
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.kiro/skills/strategic-compact"
+          }
+        ],
+        "query": "preserve citations numbers manuscript revision"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:visa-doc-translate",
+      "queries": [
+        "bilingual academic manuscript polishing Chinese English"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "visa-doc-translate",
+        "author": "affaan-m",
+        "description": "Translate visa document images (bank deposit, employment, income, and retirement certificates; HEIC, PNG, or JPG) into English via OCR and produce a bilingual PDF pairing the original image with a formatted certified-style translation. Use when a visa application needs a document translated to English, an official certificate OCR'd and translated, or a bilingual translation PDF for immigration paperwork.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/visa-doc-translate",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-visa-doc-translate",
+        "repo_stars": 279616,
+        "catalog_updated_at": "2026-09-27T20:46:07+00:00",
+        "source_key": "affaan-m/ecc:skills/visa-doc-translate",
+        "family_key": "affaan-m/ecc:visa-doc-translate",
+        "aliases": [],
+        "query": "bilingual academic manuscript polishing Chinese English"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "deepseek-ai/deepseek-harness:dsh-doc",
+      "queries": [
+        "bilingual academic manuscript polishing Chinese English"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "dsh-doc",
+        "author": "deepseek-ai",
+        "description": "Create, restructure, review, audit, or migrate DeepSeek Harness Markdown documentation, package READMEs, and the documentation website using audience-first hierarchy, kind-mapped YAML metadata, bilingual line alignment, summary/contents navigation, progressive user-to-developer detail, executed-operation fact-checking, and repository validation. Use for new or revised DSH docs, docs-tree organization, documentation-quality audits and budgets, website page publishing, and bilingual documentation structure changes.",
+        "content_language": "en",
+        "github_url": "https://github.com/deepseek-ai/deepseek-harness/tree/master/.agents/skills/dsh-doc",
+        "skillsmp_url": "https://skillsmp.com/creators/deepseek-ai/deepseek-harness/agents-skills-dsh-doc",
+        "repo_stars": 250596,
+        "catalog_updated_at": "2026-10-08T12:26:57+00:00",
+        "source_key": "deepseek-ai/deepseek-harness:.agents/skills/dsh-doc",
+        "family_key": "deepseek-ai/deepseek-harness:dsh-doc",
+        "aliases": [],
+        "query": "bilingual academic manuscript polishing Chinese English"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "deepseek-ai/deepseek-harness:dsh-translate-docs",
+      "queries": [
+        "bilingual academic manuscript polishing Chinese English"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "dsh-translate-docs",
+        "author": "deepseek-ai",
+        "description": "Manually run the extended DeepSeek Harness bilingual-document workflow, including generated briefings, delegated prose translation, whole-document translation, and scoped pairing verification.",
+        "content_language": "en",
+        "github_url": "https://github.com/deepseek-ai/deepseek-harness/tree/master/.agents/skills/dsh-translate-docs",
+        "skillsmp_url": "https://skillsmp.com/creators/deepseek-ai/deepseek-harness/agents-skills-dsh-translate-docs",
+        "repo_stars": 250596,
+        "catalog_updated_at": "2026-09-23T14:32:06+00:00",
+        "source_key": "deepseek-ai/deepseek-harness:.agents/skills/dsh-translate-docs",
+        "family_key": "deepseek-ai/deepseek-harness:dsh-translate-docs",
+        "aliases": [],
+        "query": "bilingual academic manuscript polishing Chinese English"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "n8n-io/n8n:model-selection",
+      "queries": [
+        "preserve citations numbers manuscript revision"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "model-selection",
+        "author": "n8n-io",
+        "description": "Guides AI model choices in new workflows, existing workflows, pasted workflow JSON, and model-availability questions. Load before recommending, selecting, replacing, or judging a model. Preserve working or explicitly requested IDs. An unfamiliar name or generic 404 does not establish that a model is invalid. Do not claim otherwise or suggest a replacement without provider evidence. Prefer credential-specific resource lookup when available. Use searchModels only to choose an unspecified model without a relevant credential or suitable named recommendation, never to validate a supplied ID or diagnose an existing failure. For a new choice, do not narrow discovery to a remembered model ID. Do not choose GPT-4-family or Claude 3.x for an unspecified model unless verified access constraints require them. Also activated when inspecting a model-bearing node.",
+        "content_language": "en",
+        "github_url": "https://github.com/n8n-io/n8n/tree/master/packages/%40n8n/instance-ai/skills/model-selection",
+        "skillsmp_url": "https://skillsmp.com/creators/n8n-io/n8n/packages-n8n-instance-ai-skills-model-selection",
+        "repo_stars": 207388,
+        "catalog_updated_at": "2026-09-28T03:39:12+00:00",
+        "source_key": "n8n-io/n8n:packages/%40n8n/instance-ai/skills/model-selection",
+        "family_key": "n8n-io/n8n:model-selection",
+        "aliases": [],
+        "query": "preserve citations numbers manuscript revision"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "vercel/next.js:next-partial-prefetching-adoption",
+      "queries": [
+        "preserve citations numbers manuscript revision"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "next-partial-prefetching-adoption",
+        "author": "vercel",
+        "description": "Turn on Partial Prefetching in a Next.js app and work through the insights it surfaces. Use when the user wants to enable or adopt Partial Prefetching, flip the `partialPrefetching` flag, opt routes in with `export const prefetch = 'partial'`, audit `Link prefetch={true}` behavior, preserve existing prefetched UI with `instant()` tests, or resolve the instant-link-prefetch-partial and instant-shell-url-data insights.",
+        "content_language": "en",
+        "github_url": "https://github.com/vercel/next.js/tree/canary/skills/next-partial-prefetching-adoption",
+        "skillsmp_url": "https://skillsmp.com/creators/vercel/next.js/skills-next-partial-prefetching-adoption",
+        "repo_stars": 143133,
+        "catalog_updated_at": "2026-10-09T17:07:50+00:00",
+        "source_key": "vercel/next.js:skills/next-partial-prefetching-adoption",
+        "family_key": "vercel/next.js:next-partial-prefetching-adoption",
+        "aliases": [],
+        "query": "preserve citations numbers manuscript revision"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "juliusbrussee/caveman:surgical-patch",
+      "queries": [
+        "preserve citations numbers manuscript revision"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "surgical-patch",
+        "author": "JuliusBrussee",
+        "description": "Fix bugs and small behavior changes at the narrowest responsible layer. Use when regression proof, preserved surrounding behavior, and task-relevant tests matter.",
+        "content_language": "en",
+        "github_url": "https://github.com/JuliusBrussee/caveman/tree/main/skills/surgical-patch",
+        "skillsmp_url": "https://skillsmp.com/creators/juliusbrussee/caveman/skills-surgical-patch",
+        "repo_stars": 112598,
+        "catalog_updated_at": "2026-08-11T14:46:10+00:00",
+        "source_key": "juliusbrussee/caveman:skills/surgical-patch",
+        "family_key": "juliusbrussee/caveman:surgical-patch",
+        "aliases": [],
+        "query": "preserve citations numbers manuscript revision"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "paperclipai/paperclip:complain",
+      "queries": [
+        "preserve citations numbers manuscript revision"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "complain",
+        "author": "paperclipai",
+        "description": "Autonomously yeet a brief, unstructured complaint about agent tooling or doing agent work. Preserve the raw voice. Submit proactively without permission, preview, or announcement, then continue the primary task.",
+        "content_language": "en",
+        "github_url": "https://github.com/paperclipai/paperclip/tree/master/skills/complain",
+        "skillsmp_url": "https://skillsmp.com/creators/paperclipai/paperclip/skills-complain",
+        "repo_stars": 102861,
+        "catalog_updated_at": "2026-10-06T21:14:06+00:00",
+        "source_key": "paperclipai/paperclip:skills/complain",
+        "family_key": "paperclipai/paperclip:complain",
+        "aliases": [],
+        "query": "preserve citations numbers manuscript revision"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nexu-io/open-design:design-taste-frontend-v1",
+      "queries": [
+        "preserve citations numbers manuscript revision"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "design-taste-frontend-v1",
+        "author": "nexu-io",
+        "description": "The original v1 taste-skill, preserved for projects depending on its exact behavior. The current default is `design-taste-frontend` (v2 experimental), which is a substantial rewrite. Use this v1 install name only if you need exact backward compatibility.",
+        "content_language": "en",
+        "github_url": "https://github.com/nexu-io/open-design/tree/main/skills/taste-skill-v1",
+        "skillsmp_url": "https://skillsmp.com/creators/nexu-io/open-design/skills-taste-skill-v1",
+        "repo_stars": 101372,
+        "catalog_updated_at": "2026-06-02T07:34:30+00:00",
+        "source_key": "nexu-io/open-design:skills/taste-skill-v1",
+        "family_key": "nexu-io/open-design:design-taste-frontend-v1",
+        "aliases": [],
+        "query": "preserve citations numbers manuscript revision"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nexu-io/open-design:hps-academic-paper",
+      "queries": [
+        "academic writing style editor agent skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "hps-academic-paper",
+        "author": "nexu-io",
+        "description": "A review deck on compositional generalization in large language models — the field map, the gap, the evidence, and open questions. Built as a decision-grade academic research deck for PI, lab group, reviewers.",
+        "content_language": "en",
+        "github_url": "https://github.com/nexu-io/open-design/tree/main/plugins/_official/examples/hps-academic-paper",
+        "skillsmp_url": "https://skillsmp.com/creators/nexu-io/open-design/plugins-official-examples-hps-academic-paper",
+        "repo_stars": 101372,
+        "catalog_updated_at": "2026-07-14T08:43:57+00:00",
+        "source_key": "nexu-io/open-design:plugins/_official/examples/hps-academic-paper",
+        "family_key": "nexu-io/open-design:hps-academic-paper",
+        "aliases": [],
+        "query": "academic writing style editor agent skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nexu-io/open-design:html-ppt-zhangzara-monochrome",
+      "queries": [
+        "academic writing style editor agent skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "html-ppt-zhangzara-monochrome",
+        "author": "nexu-io",
+        "description": "A grant proposal on CRISPR base-editing for sickle-cell disease — the hypothesis, the approach, the milestones, and the risk. Built as a decision-grade academic research deck for grant review committee.",
+        "content_language": "en",
+        "github_url": "https://github.com/nexu-io/open-design/tree/main/design-templates/html-ppt-zhangzara-monochrome",
+        "skillsmp_url": "https://skillsmp.com/creators/nexu-io/open-design/design-templates-html-ppt-zhangzara-monochrome",
+        "repo_stars": 101372,
+        "catalog_updated_at": "2026-07-10T09:41:47+00:00",
+        "source_key": "nexu-io/open-design:design-templates/html-ppt-zhangzara-monochrome",
+        "family_key": "nexu-io/open-design:html-ppt-zhangzara-monochrome",
+        "aliases": [
+          {
+            "language": "en",
+            "github_url": "https://github.com/nexu-io/open-design/tree/main/plugins/_official/examples/html-ppt-zhangzara-monochrome"
+          },
+          {
+            "language": "en",
+            "github_url": "https://github.com/nexu-io/open-design/tree/main/plugins/_official/examples/html-ppt-zhangzara-monochrome"
+          }
+        ],
+        "query": "academic writing style editor agent skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nexu-io/open-design:html-ppt-zhangzara-vellum",
+      "queries": [
+        "academic writing style editor agent skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "html-ppt-zhangzara-vellum",
+        "author": "nexu-io",
+        "description": "A humanities lecture: how Renaissance linear perspective reshaped early cartography — sources, argument, and evidence. Built as a decision-grade academic research deck for faculty, graduate seminar.",
+        "content_language": "en",
+        "github_url": "https://github.com/nexu-io/open-design/tree/main/design-templates/html-ppt-zhangzara-vellum",
+        "skillsmp_url": "https://skillsmp.com/creators/nexu-io/open-design/design-templates-html-ppt-zhangzara-vellum",
+        "repo_stars": 101372,
+        "catalog_updated_at": "2026-07-10T09:41:47+00:00",
+        "source_key": "nexu-io/open-design:design-templates/html-ppt-zhangzara-vellum",
+        "family_key": "nexu-io/open-design:html-ppt-zhangzara-vellum",
+        "aliases": [
+          {
+            "language": "en",
+            "github_url": "https://github.com/nexu-io/open-design/tree/main/plugins/_official/examples/html-ppt-zhangzara-vellum"
+          },
+          {
+            "language": "en",
+            "github_url": "https://github.com/nexu-io/open-design/tree/main/plugins/_official/examples/html-ppt-zhangzara-vellum"
+          }
+        ],
+        "query": "academic writing style editor agent skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nexu-io/open-design:kami-deck",
+      "queries": [
+        "academic writing style editor agent skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "kami-deck",
+        "author": "nexu-io",
+        "description": "A lab-meeting deck on gut-microbiome links to sleep quality — the design, the results, the caveats, and the next experiment. Built as a decision-grade academic research deck for lab group, PI.",
+        "content_language": "en",
+        "github_url": "https://github.com/nexu-io/open-design/tree/main/design-templates/kami-deck",
+        "skillsmp_url": "https://skillsmp.com/creators/nexu-io/open-design/design-templates-kami-deck",
+        "repo_stars": 101372,
+        "catalog_updated_at": "2026-08-18T07:09:45+00:00",
+        "source_key": "nexu-io/open-design:design-templates/kami-deck",
+        "family_key": "nexu-io/open-design:kami-deck",
+        "aliases": [
+          {
+            "language": "en",
+            "github_url": "https://github.com/nexu-io/open-design/tree/main/plugins/_official/examples/kami-deck"
+          },
+          {
+            "language": "en",
+            "github_url": "https://github.com/nexu-io/open-design/tree/main/plugins/_official/examples/kami-deck"
+          }
+        ],
+        "query": "academic writing style editor agent skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "leonxlnx/taste-skill:design-taste-frontend-v1",
+      "queries": [
+        "preserve citations numbers manuscript revision"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "design-taste-frontend-v1",
+        "author": "Leonxlnx",
+        "description": "The original v1 taste-skill, preserved for projects depending on its exact behavior. The current default is `design-taste-frontend` (v2), which is a new skill. Use this v1 install name only if you need exact backward compatibility.",
+        "content_language": "en",
+        "github_url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill-v1",
+        "skillsmp_url": "https://skillsmp.com/creators/leonxlnx/taste-skill/skills-taste-skill-v1",
+        "repo_stars": 97410,
+        "catalog_updated_at": "2026-10-11T20:06:43+00:00",
+        "source_key": "leonxlnx/taste-skill:skills/taste-skill-v1",
+        "family_key": "leonxlnx/taste-skill:design-taste-frontend-v1",
+        "aliases": [],
+        "query": "preserve citations numbers manuscript revision"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bytedance/deer-flow:academic-paper-review",
+      "queries": [
+        "academic writing style editor agent skill"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "academic-paper-review",
+        "author": "bytedance",
+        "description": "Use this skill when the user requests to review, analyze, critique, or summarize academic papers, research articles, preprints, or scientific publications. Supports comprehensive structured reviews covering methodology assessment, contribution evaluation, literature positioning, and constructive feedback generation. Trigger on queries involving paper URLs, uploaded PDFs, arXiv links, or requests like \"review this paper\", \"analyze this research\", \"summarize this study\", or \"write a peer review\".",
+        "content_language": "en",
+        "github_url": "https://github.com/bytedance/deer-flow/tree/main/skills/public/academic-paper-review",
+        "skillsmp_url": "https://skillsmp.com/creators/bytedance/deer-flow/skills-public-academic-paper-review",
+        "repo_stars": 83927,
+        "catalog_updated_at": "2026-04-05T02:19:35+00:00",
+        "source_key": "bytedance/deer-flow:skills/public/academic-paper-review",
+        "family_key": "bytedance/deer-flow:academic-paper-review",
+        "aliases": [],
+        "query": "academic writing style editor agent skill"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "tw93/mole:release-notes",
+      "queries": [
+        "bilingual academic manuscript polishing Chinese English"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "release-notes",
+        "author": "tw93",
+        "description": "Publish curated release notes for an existing Mole `V<version>` tag, including bilingual format, `gh release edit`, contributor thanks, and reactions. Use only when explicitly asked to edit or publish Mole release notes. Not for release readiness, tagging, or code review.",
+        "content_language": "en",
+        "github_url": "https://github.com/tw93/Mole/tree/main/.claude/skills/release-notes",
+        "skillsmp_url": "https://skillsmp.com/creators/tw93/mole/claude-skills-release-notes",
+        "repo_stars": 70590,
+        "catalog_updated_at": "2026-09-20T03:18:04+00:00",
+        "source_key": "tw93/mole:.claude/skills/release-notes",
+        "family_key": "tw93/mole:release-notes",
+        "aliases": [],
+        "query": "bilingual academic manuscript polishing Chinese English"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "cherryhq/cherry-studio:prepare-release",
+      "queries": [
+        "bilingual academic manuscript polishing Chinese English"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "prepare-release",
+        "author": "CherryHQ",
+        "description": "Prepare a new release by collecting commits, generating bilingual release notes, updating version files, and creating a release branch. Use when asked to prepare/create a release, bump version, or run `/prepare-release`.",
+        "content_language": "en",
+        "github_url": "https://github.com/CherryHQ/cherry-studio/tree/main/.agents/skills/prepare-release",
+        "skillsmp_url": "https://skillsmp.com/creators/cherryhq/cherry-studio/agents-skills-prepare-release",
+        "repo_stars": 52666,
+        "catalog_updated_at": "2026-09-30T15:55:10+00:00",
+        "source_key": "cherryhq/cherry-studio:.agents/skills/prepare-release",
+        "family_key": "cherryhq/cherry-studio:prepare-release",
+        "aliases": [],
+        "query": "bilingual academic manuscript polishing Chinese English"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "imbad0202/academic-research-skills:academic-paper",
+      "queries": [
+        "bilingual academic manuscript polishing Chinese English"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "academic-paper",
+        "author": "Imbad0202",
+        "description": "12-agent academic paper writing pipeline. 11 modes (full/plan/outline/revision/revision-coach/abstract/lit-review/format-convert/citation-check/disclosure/rebuttal-audit). 6 paper types, 5 citation formats, bilingual abstracts, LaTeX/DOCX-via-Pandoc/PDF output. Style Calibration + Writing Quality Check + Anti-Patterns with IRON RULE markers. Triggers: write paper, academic paper, guide my paper, parse reviews, I got reviewer comments, revision roadmap, should we push back, conference rebuttal, grant panel response, audit my rebuttal, check my response draft, AI disclosure, check citations, citation check, check my references, verify references, look over the refs, 寫論文, 學術論文, 引導我寫論文, 審查意見, 我收到審查意見, 修訂路線圖, 評估回覆, 檢查引用, 引用檢查, 檢查參考文獻, 核對文獻, 논문 작성, 초록 작성, 논문 수정, 논문 계획을 도와줘, 심사 의견을 받았어, 심사 의견 반영, 답변서 점검, AI 사용 고지, 인용 확인, 인용 형식 검사, enmendar mi artículo, redactar artículo, guía mi artículo, analizar reseñas, auditar mi respuesta, verificar borrador de respuesta, verificar citas, divulgación de IA.",
+        "content_language": "en",
+        "github_url": "https://github.com/Imbad0202/academic-research-skills/tree/main/academic-paper",
+        "skillsmp_url": "https://skillsmp.com/creators/imbad0202/academic-research-skills/academic-paper",
+        "repo_stars": 52271,
+        "catalog_updated_at": "2026-10-13T17:41:19+00:00",
+        "source_key": "imbad0202/academic-research-skills:academic-paper",
+        "family_key": "imbad0202/academic-research-skills:academic-paper",
+        "aliases": [],
+        "query": "bilingual academic manuscript polishing Chinese English"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "yuan1z0825/nature-skills:nature-paper-card",
+      "queries": [
+        "bilingual academic manuscript polishing Chinese English"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "nature-paper-card",
+        "author": "Yuan1z0825",
+        "description": "Build a structured deep-reading Paper Card for one scientific paper, analysing methods, experiment-to-claim evidence, limitations, and research ideas. Use for 论文精读卡、方法拆解、证据链分析; not full-paper bilingual translation or formal peer review.",
+        "content_language": "en",
+        "github_url": "https://github.com/Yuan1z0825/nature-skills/tree/main/skills/nature-paper-card",
+        "skillsmp_url": "https://skillsmp.com/creators/yuan1z0825/nature-skills/skills-nature-paper-card",
+        "repo_stars": 48577,
+        "catalog_updated_at": "2026-09-14T03:02:27+00:00",
+        "source_key": "yuan1z0825/nature-skills:skills/nature-paper-card",
+        "family_key": "yuan1z0825/nature-skills:nature-paper-card",
+        "aliases": [],
+        "query": "bilingual academic manuscript polishing Chinese English"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "qwenlm/qwen-code:create-issue",
+      "queries": [
+        "bilingual academic manuscript polishing Chinese English"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "create-issue",
+        "author": "QwenLM",
+        "description": "Draft and submit a GitHub issue from a user idea or bug description, with bilingual body and correct labels.",
+        "content_language": "en",
+        "github_url": "https://github.com/QwenLM/qwen-code/tree/main/.qwen/skills/create-issue",
+        "skillsmp_url": "https://skillsmp.com/creators/qwenlm/qwen-code/qwen-skills-create-issue",
+        "repo_stars": 28508,
+        "catalog_updated_at": "2026-06-11T09:42:43+00:00",
+        "source_key": "qwenlm/qwen-code:.qwen/skills/create-issue",
+        "family_key": "qwenlm/qwen-code:create-issue",
+        "aliases": [],
+        "query": "bilingual academic manuscript polishing Chinese English"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "qwenlm/qwen-code:triage",
+      "queries": [
+        "bilingual academic manuscript polishing Chinese English"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "triage",
+        "author": "QwenLM",
+        "description": "Gatekeep and review GitHub issues and pull requests for Qwen Code maintainers. Use for GitHub Action issue triage, PR admission checks, product-direction review, KISS-focused PR review, and staged bilingual GitHub comments.",
+        "content_language": "en",
+        "github_url": "https://github.com/QwenLM/qwen-code/tree/main/.qwen/skills/triage",
+        "skillsmp_url": "https://skillsmp.com/creators/qwenlm/qwen-code/qwen-skills-triage",
+        "repo_stars": 28508,
+        "catalog_updated_at": "2026-09-02T09:25:52+00:00",
+        "source_key": "qwenlm/qwen-code:.qwen/skills/triage",
+        "family_key": "qwenlm/qwen-code:triage",
+        "aliases": [],
+        "query": "bilingual academic manuscript polishing Chinese English"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "umijs/qiankun:release-changelog",
+      "queries": [
+        "bilingual academic manuscript polishing Chinese English"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "release-changelog",
+        "author": "umijs",
+        "description": "Polish a published qiankun GitHub Release's aggregated notes into a bilingual (English then Chinese) write-up with an agent. Use after a release goes out — turning the mechanically-aggregated, per-package release notes into a clean, human-readable, English + Chinese write-up (highlights, de-duped cross-package lines, clearer wording) via `gh release edit`. Triggers include \"polish the release notes\", \"clean up the GitHub release\", \"improve the changelog for the latest release\".",
+        "content_language": "en",
+        "github_url": "https://github.com/umijs/qiankun/tree/next/.claude/skills/release-changelog",
+        "skillsmp_url": "https://skillsmp.com/creators/umijs/qiankun/claude-skills-release-changelog",
+        "repo_stars": 16697,
+        "catalog_updated_at": "2026-07-07T16:20:42+00:00",
+        "source_key": "umijs/qiankun:.claude/skills/release-changelog",
+        "family_key": "umijs/qiankun:release-changelog",
+        "aliases": [],
+        "query": "bilingual academic manuscript polishing Chinese English"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    }
+  ],
+  "missing_evidence": [
+    "skills.sh `bilingual academic manuscript polishing Chinese English`: skills.sh returned no parseable candidates",
+    "skills.sh `preserve citations numbers manuscript revision`: skills.sh returned no parseable candidates"
+  ],
+  "next_steps": [
+    "shortlist by job relevance and role coverage, not combined popularity",
+    "open canonical GitHub source and inspect SKILL.md before adoption",
+    "verify license, maintenance, permissions, security, duplication, and rating evidence",
+    "write keep/adapt/reject/invent synthesis before authoring"
+  ]
+}

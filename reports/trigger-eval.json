@@ -1,0 +1,304 @@
+{
+  "ok": true,
+  "threshold": 0.67,
+  "description_concepts": [
+    "action",
+    "domain",
+    "input",
+    "language"
+  ],
+  "missing_description_concepts": [],
+  "summary": {
+    "total": 21,
+    "passed": 21,
+    "false_positive": 0,
+    "false_negative": 0,
+    "pass_rate": 1.0
+  },
+  "failures": [],
+  "results": {
+    "should_trigger": [
+      {
+        "prompt": "请润色下面这段中文论文引言，保持引用和数据不变。",
+        "family": "zh_manuscript",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "action",
+          "domain",
+          "language"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "Polish this English Results paragraph; preserve every p-value and citation.",
+        "family": "en_results",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "action",
+          "input",
+          "language"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "把我的中文 NSFC 立项依据改得更凝练，保持原意。",
+        "family": "zh_grant",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "action",
+          "domain",
+          "language"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "Improve the English abstract of my academic manuscript for a journal submission without adding results.",
+        "family": "en_abstract",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "action",
+          "domain",
+          "input",
+          "language"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "请根据附件里的中文讨论部分做学术表达提升。",
+        "family": "zh_attachment",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "action",
+          "domain",
+          "language"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "Polish the Methods section in English and retain all units and identifiers.",
+        "family": "en_methods",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "action",
+          "input",
+          "language"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "中英混杂的学术段落请按主要语言分别润色。",
+        "family": "mixed_language",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "action",
+          "domain",
+          "input",
+          "language"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "还是太啰嗦，请把上一版英文论文段落再压缩一轮。",
+        "family": "en_follow_up",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "domain",
+          "input",
+          "language"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "请把这段中文医学论文结果改得更紧凑，保留 1,204 例、p<0.001 和 Figure 2。",
+        "family": "zh_technical_tokens",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "action",
+          "domain",
+          "language"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "Polish this English paragraph containing DOI:10.1234/abc and rs12345; keep both identifiers.",
+        "family": "en_technical_tokens",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "action",
+          "input",
+          "language"
+        ],
+        "negative_pattern": null
+      }
+    ],
+    "should_not_trigger": [
+      {
+        "prompt": "把这篇论文翻译成英文。",
+        "family": "translation_only",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.5,
+        "matched_concepts": [
+          "domain",
+          "language"
+        ],
+        "negative_pattern": "翻译成英文"
+      },
+      {
+        "prompt": "总结一下这篇论文。",
+        "family": "summary_only",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "domain"
+        ],
+        "negative_pattern": "总结一下"
+      },
+      {
+        "prompt": "请审稿这篇论文并给出接收建议。",
+        "family": "peer_review",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "domain"
+        ],
+        "negative_pattern": "审稿这篇论文"
+      },
+      {
+        "prompt": "请修复这篇论文的 LaTeX 排版和浮动体。",
+        "family": "layout",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "domain"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "请查找支持这句话的文献。",
+        "family": "literature_search",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "帮我从零写一篇英文论文。",
+        "family": "new_draft",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.5,
+        "matched_concepts": [
+          "domain",
+          "language"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "我有一段学术英文。",
+        "family": "no_action",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.5,
+        "matched_concepts": [
+          "domain",
+          "language"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "请推荐学术润色软件，不要编辑我的段落。",
+        "family": "tool_recommendation",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "action",
+          "domain",
+          "input"
+        ],
+        "negative_pattern": "润色软件"
+      }
+    ],
+    "near_neighbor": [
+      {
+        "prompt": "请审计论文中的引用是否真实存在。",
+        "family": "citation_audit",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "domain"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "请把论文改成 Nature 的 LaTeX 模板。",
+        "family": "format_conversion",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "domain"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "请根据结果撰写新的 Discussion。",
+        "family": "new_section_draft",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "input"
+        ],
+        "negative_pattern": null
+      }
+    ]
+  }
+}

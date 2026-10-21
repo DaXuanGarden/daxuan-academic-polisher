@@ -1,0 +1,10 @@
+{
+  "name": "daxuan-academic-polisher",
+  "version": "0.2.0",
+  "description": "Polish Chinese or English academic prose in its source language while preserving evidence.",
+  "author": {"name": "Daxuan"},
+  "homepage": "https://github.com/DaXuanGarden/daxuan-academic-polisher",
+  "repository": "https://github.com/DaXuanGarden/daxuan-academic-polisher",
+  "license": "MIT",
+  "skills": ["./"]
+}

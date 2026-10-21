@@ -1,0 +1,196 @@
+{
+  "schema_version": "2.0.0-qiaomu-lite",
+  "generated_at": "2026-10-21",
+  "package": {
+    "name": "daxuan-academic-polisher",
+    "version": "0.2.0",
+    "owner": "Daxuan",
+    "maturity_tier": "beta",
+    "lifecycle_stage": "beta",
+    "upstream_inspiration": [
+      "https://github.com/Yuan1z0825/nature-skills",
+      "https://github.com/Imbad0202/academic-research-skills",
+      "https://github.com/royurvieta/scientific-writing-editor",
+      "https://github.com/dvdsosa/scientific-writing-skills",
+      "https://github.com/andrehuang/academic-writing-agents",
+      "https://github.com/machinemade-mm/humanmade-antislop"
+    ],
+    "upstream_sync": {}
+  },
+  "intent": {
+    "description": "Polish and improve existing academic manuscript prose in its source language: Chinese\ndrafts stay Chinese and English drafts stay English unless the user explicitly requests\ntranslation or a different output language. Use when the user asks to 润色、修改、精炼、\n提升、精简、凝练、紧凑、压缩、polish, edit, tighten, compact, concise, or improve a draft, paragraph, abstract, introduction,\nmethods, results, discussion, conclusion, review article, thesis section, or NSFC/grant\npassage. Preserve facts, numbers, units, citations, identifiers, terminology, claim\nstrength, voice, and paragraph structure. Do not use for translation-only, literature\nsearch, citation verification, peer-review verdicts, statistical recalculation, or\nLaTeX/DOCX layout repair.",
+    "job_to_be_done": "Polish existing academic prose in its detected Chinese or English language while preserving evidence, claims, terminology, and structure.",
+    "target_users": [
+      "researchers",
+      "graduate students",
+      "grant applicants",
+      "academic editors"
+    ],
+    "inputs": [
+      "pasted prose",
+      "attached manuscript passages",
+      "Markdown or plain-text sections",
+      "explicit journal, grant, or section preferences",
+      "optional style anchor"
+    ],
+    "outputs": [
+      "polished passage in the routed language",
+      "up to five genuine notes",
+      "optional audit findings or draft flags"
+    ],
+    "exclusions": [
+      "translation-only",
+      "literature search",
+      "citation verification",
+      "peer-review verdict",
+      "statistical recalculation",
+      "LaTeX or DOCX layout repair",
+      "inventing data, references, or results"
+    ],
+    "qiaomu_defaults": {}
+  },
+  "triggers": {
+    "should_trigger": [
+      "请润色下面这段中文论文引言，保持引用和数据不变。",
+      "Polish this English Results paragraph; preserve every p-value and citation.",
+      "把我的中文 NSFC 立项依据改得更凝练，保持原意。",
+      "Improve the English abstract of my academic manuscript for a journal submission without adding results.",
+      "请根据附件里的中文讨论部分做学术表达提升。",
+      "Polish the Methods section in English and retain all units and identifiers.",
+      "中英混杂的学术段落请按主要语言分别润色。",
+      "还是太啰嗦，请把上一版英文论文段落再压缩一轮。",
+      "请把这段中文医学论文结果改得更紧凑，保留 1,204 例、p<0.001 和 Figure 2。",
+      "Polish this English paragraph containing DOI:10.1234/abc and rs12345; keep both identifiers."
+    ],
+    "should_not_trigger": [
+      "把这篇论文翻译成英文。",
+      "总结一下这篇论文。",
+      "请审稿这篇论文并给出接收建议。",
+      "请修复这篇论文的 LaTeX 排版和浮动体。",
+      "请查找支持这句话的文献。",
+      "帮我从零写一篇英文论文。",
+      "我有一段学术英文。",
+      "请推荐学术润色软件，不要编辑我的段落。"
+    ],
+    "near_neighbor": [
+      "请审计论文中的引用是否真实存在。",
+      "请把论文改成 Nature 的 LaTeX 模板。",
+      "请根据结果撰写新的 Discussion。"
+    ]
+  },
+  "workflow": {
+    "router_rules": [
+      "Detect the draft language, not the language of the user's instruction. Chinese prose",
+      "An explicit request such as “润色成英文” or “polish in English” overrides automatic",
+      "Ignore URLs, code, equations, citation brackets, file paths, and isolated technical IDs",
+      "Detect section and register only when supported by the text or the user's request. Use",
+      "Default mode is `polish`: edit existing prose without adding facts. Use `draft` only"
+    ],
+    "compact_workflow": [
+      "Read the whole supplied passage once for meaning, section function, claim strength,",
+      "Apply the shared evidence boundary in [core editing rules](references/core-editing-rules.md).",
+      "Load the detected language guide: [Chinese](references/zh-style.md) or",
+      "Put the point or finding early when this can be done without changing emphasis. Remove",
+      "Self-check protected tokens and evidence boundaries before answering. The deletion test"
+    ],
+    "gate_ladder": [],
+    "output_contract": [
+      "In `polish` mode, return the polished text first. Preserve the original paragraph,",
+      "Then add `修改说明：` for a Chinese conversation or `Notes:` for an English conversation.",
+      "In `audit` mode, return concise findings and targeted repairs without silently rewriting",
+      "Keep the polished body in the source language by default. Notes may follow the language"
+    ]
+  },
+  "resources": {
+    "references": [
+      "references/core-editing-rules.md",
+      "references/en-style.md",
+      "references/language-routing.md",
+      "references/output-contract.md",
+      "references/section-registers.md",
+      "references/style-anchor.md",
+      "references/zh-style.md"
+    ],
+    "scripts": [
+      "scripts/build_showcase.py",
+      "scripts/check_preservation.py",
+      "scripts/detect_language.py",
+      "scripts/run_regression.py",
+      "scripts/validate_package.py"
+    ],
+    "evals": [
+      "evals/output_cases.json",
+      "evals/routing_cases.json",
+      "evals/trigger_cases.json"
+    ],
+    "reports": [
+      "reports/creation-handoff.md",
+      "reports/output-evidence.json",
+      "reports/polish-report.md",
+      "reports/prior-art-candidates.json",
+      "reports/prior-art-research.md",
+      "reports/release-check.json",
+      "reports/showcase-evidence.json",
+      "reports/skill-ir.json",
+      "reports/trigger-eval.json"
+    ]
+  },
+  "portability": {
+    "canonical_format": "agent-skills",
+    "adapter_targets": [
+      "openai",
+      "claude",
+      "generic",
+      "agent-skills-compatible",
+      "vscode"
+    ],
+    "activation": {
+      "mode": "manual",
+      "paths": []
+    },
+    "execution": {
+      "context": "inline",
+      "shell": "bash"
+    },
+    "trust": {
+      "source_tier": "local",
+      "remote_inline_execution": "forbid",
+      "remote_metadata_policy": "allow read-only source review; forbid unreviewed execution",
+      "generated_public_claims": "evidence-bound"
+    },
+    "permissions": {
+      "network": "none required for polishing; external lookup only when the user separately requests it",
+      "file_write": "read-only by default; write a revised file only when the user explicitly requests it",
+      "subprocess": "optional local language and token-preservation checks",
+      "interactive": "ask only when language or scope is genuinely ambiguous"
+    },
+    "degradation": {
+      "openai": "metadata-adapter",
+      "claude": "neutral-source-plus-adapter",
+      "generic": "neutral-source",
+      "agent-skills-compatible": "canonical-source",
+      "vscode": "neutral-source-plus-review-notes"
+    }
+  },
+  "gates": {
+    "scaffold": [
+      "frontmatter with natural Chinese and English polishing triggers",
+      "explicit exclusions for translation-only, peer review, literature search, and layout",
+      "README installation hook and examples"
+    ],
+    "production": [
+      "automatic source-language routing with explicit override",
+      "shared evidence-preservation contract and language-specific rules",
+      "agents/interface.yaml and agents/openai.yaml",
+      "self-contained local validation and regression tests",
+      "prior-art, Skill IR, and creation-handoff evidence",
+      "portable installation instructions"
+    ]
+  },
+  "evidence_boundary": {
+    "generated_reports_are_evidence": true,
+    "planned_work_is_evidence": false,
+    "missing_external_or_human_evidence_label": "missing evidence",
+    "public_claim_policy": "claim only what local validation, install proof, human review, or provider-backed evidence actually supports"
+  }
+}

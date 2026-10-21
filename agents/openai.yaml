@@ -1,0 +1,6 @@
+interface:
+  display_name: "Daxuan Academic Polisher"
+  short_description: "Source-language academic prose polishing with evidence preservation"
+  default_prompt: "Use $daxuan-academic-polisher to polish this existing academic passage in its dominant source language. Preserve facts, numbers, units, citations, identifiers, claim strength, terminology, voice, and paragraph structure; return the polished text first and no more than five real notes."
+policy:
+  allow_implicit_invocation: true

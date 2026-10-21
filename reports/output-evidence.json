@@ -1,0 +1,18 @@
+{
+  "evidence_kind": "authored_fixture",
+  "model_run": false,
+  "human_blind_review": false,
+  "cases": 4,
+  "contract_checks": [
+    "source-language body remains source language",
+    "protected values and citations are unchanged",
+    "Chinese fixture retains experiment count",
+    "NSFC fixture retains body and flags missing scientific specifics"
+  ],
+  "limits": [
+    "fixtures are synthetic and authored",
+    "surface token checks are not semantic equivalence",
+    "no provider-backed comparison",
+    "no journal-specific compliance evidence"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "daxuan-academic-skills",
+  "owner": {"name": "Daxuan"},
+  "plugins": [{
+    "name": "daxuan-academic-polisher",
+    "source": "./",
+    "description": "Source-language Chinese or English academic manuscript polishing with evidence-preserving checks."
+  }],
+  "metadata": {"description": "A compact bilingual academic editing skill for Codex and compatible agents."}
+}

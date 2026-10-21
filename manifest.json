@@ -1,0 +1,42 @@
+{
+  "name": "daxuan-academic-polisher",
+  "version": "0.2.0",
+  "owner": "Daxuan",
+  "updated_at": "2026-10-21",
+  "status": "active",
+  "maturity_tier": "beta",
+  "lifecycle_stage": "beta",
+  "context_budget_tier": "production",
+  "review_cadence": "quarterly",
+  "upstream_inspiration": [
+    "https://github.com/Yuan1z0825/nature-skills",
+    "https://github.com/Imbad0202/academic-research-skills",
+    "https://github.com/royurvieta/scientific-writing-editor",
+    "https://github.com/dvdsosa/scientific-writing-skills",
+    "https://github.com/andrehuang/academic-writing-agents",
+    "https://github.com/machinemade-mm/humanmade-antislop"
+  ],
+  "intent": {
+    "job_to_be_done": "Polish existing academic prose in its detected Chinese or English language while preserving evidence, claims, terminology, and structure.",
+    "target_users": ["researchers", "graduate students", "grant applicants", "academic editors"],
+    "inputs": ["pasted prose", "attached manuscript passages", "Markdown or plain-text sections", "explicit journal, grant, or section preferences", "optional style anchor"],
+    "outputs": ["polished passage in the routed language", "up to five genuine notes", "optional audit findings or draft flags"],
+    "exclusions": ["translation-only", "literature search", "citation verification", "peer-review verdict", "statistical recalculation", "LaTeX or DOCX layout repair", "inventing data, references, or results"]
+  },
+  "evidence": {
+    "machine_checks": ["package validation", "language routing regression", "protected-token preservation regression", "trigger evaluation", "Skill IR export", "source/install smoke test"],
+    "not_yet_proven": ["provider-backed model quality", "blind human preference", "semantic equivalence", "journal-specific compliance"]
+  },
+  "release_gates": [
+    "prior_art_research",
+    "source_language_router",
+    "protected_token_contract",
+    "root_entrypoint_isolation",
+    "self_contained_validation",
+    "trigger_eval",
+    "skill_ir",
+    "readme_product_page",
+    "evidence_bound_public_claims",
+    "install_verification"
+  ]
+}

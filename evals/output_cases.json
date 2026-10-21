@@ -1,0 +1,59 @@
+{
+  "evidence_kind": "authored_fixture",
+  "model_run": false,
+  "purpose": "Contract fixtures for preserving facts and output shape; they are not provider-backed quality evidence.",
+  "cases": [
+    {
+      "id": "zh_filler_and_claim_strength",
+      "prompt": "请润色中文结果段，保留统计信息。",
+      "input": "值得注意的是，本研究通过三组独立实验进行了评估，结果显示该方法具有显著效果（p<0.01）。",
+      "polished_fixture": "本研究通过三组独立实验评估该方法；结果显示其效果显著（p<0.01）。",
+      "assertions": [
+        "Chinese output",
+        "three independent experiments remain",
+        "p<0.01 is unchanged",
+        "stock opener removed",
+        "no unsupported magnitude added"
+      ],
+      "human_notes": "The fixture retains the experiment count and does not turn statistical significance into an effect-size claim. Read the source before deleting any method detail."
+    },
+    {
+      "id": "en_nominalization_and_citation",
+      "prompt": "Polish this English Methods sentence and keep the citation.",
+      "input": "The evaluation of model performance was conducted through the utilization of five-fold cross-validation [12].",
+      "polished_fixture": "Model performance was evaluated with five-fold cross-validation [12].",
+      "assertions": [
+        "English output",
+        "[12] is unchanged",
+        "method remains passive",
+        "nominalization is reduced"
+      ],
+      "human_notes": "The fixture demonstrates a minimal edit; venue-specific style still outranks this default."
+    },
+    {
+      "id": "protected_values",
+      "prompt": "Polish without changing values, units, or identifiers.",
+      "input": "The cohort included 1,204 participants; the hazard ratio was 0.82 (95% CI, 0.78–0.87; p<0.001) for MASLD.",
+      "polished_fixture": "The cohort included 1,204 participants; the hazard ratio for MASLD was 0.82 (95% CI, 0.78–0.87; p < 0.001).",
+      "assertions": [
+        "all numbers and range values are preserved",
+        "MASLD is preserved",
+        "p-value is preserved despite spacing",
+        "claim strength is unchanged"
+      ],
+      "human_notes": "The preservation script normalizes spacing around the p-value operator but remains only a surface alarm."
+    },
+    {
+      "id": "zh_nsfc_register",
+      "prompt": "把 NSFC 立项依据改得更凝练，不补充前期数据。",
+      "input": "本项目具有重要的理论意义和现实意义，有望为相关研究提供新的思路。",
+      "polished_fixture": "本项目具有重要的理论和现实意义，有望为相关研究提供新的思路。[待核实：原文未说明具体科学问题、证据缺口或可检验目标]",
+      "assertions": [
+        "Chinese body remains present",
+        "no novelty or data invented",
+        "unsupported promotional specificity is flagged"
+      ],
+      "human_notes": "A language pass cannot supply the missing scientific question; ask for those inputs before drafting a stronger claim."
+    }
+  ]
+}

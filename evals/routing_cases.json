@@ -1,0 +1,40 @@
+{
+  "evidence_kind": "deterministic_regression",
+  "cases": [
+    {
+      "id": "zh_with_technical_english",
+      "text": "本研究纳入 1,204 例患者，hazard ratio 为 0.82。",
+      "expected": "zh"
+    },
+    {
+      "id": "english_prose",
+      "text": "The cohort included 1,204 participants; the hazard ratio was 0.82.",
+      "expected": "en"
+    },
+    {
+      "id": "technical_only",
+      "text": "DOI:10.1234/abc PMID:12345678 p<0.001 rs12345 ABC-1",
+      "expected": "und"
+    },
+    {
+      "id": "short_balanced_mixed",
+      "text": "中文 Chinese English 日本語",
+      "expected": "und"
+    },
+    {
+      "id": "mixed_prose",
+      "text": "本研究发现 the treatment reduced symptoms, but the mechanism remains uncertain。",
+      "expected": "en"
+    },
+    {
+      "id": "english_with_statistic",
+      "text": "The result was significant (p<0.001) in 120 patients.",
+      "expected": "en"
+    },
+    {
+      "id": "chinese_with_equation",
+      "text": "在模型中，β=0.42，样本量为 120 例，结果提示关联。",
+      "expected": "zh"
+    }
+  ]
+}
