@@ -1,0 +1,11 @@
+{
+  "evidence_kind": "executed_remote_install",
+  "command": "npx skills add DaXuanGarden/daxuan-academic-polisher --global --agent codex --skill daxuan-academic-polisher --copy --yes --json",
+  "source": "DaXuanGarden/daxuan-academic-polisher",
+  "skill": "daxuan-academic-polisher",
+  "status": "installed",
+  "agent": "Codex",
+  "path": "~/.agents/skills/daxuan-academic-polisher",
+  "old_name_present": false,
+  "note": "Executed against the public main branch; the PR feature branch adds publication-report metadata."
+}

@@ -4,7 +4,7 @@
   "local_package": true,
   "git_repository": false,
   "default_branch": "main",
-  "remote_install": false,
+  "remote_install": true,
   "checks": {
     "self_contained_validation": "pass: scripts/validate_package.py",
     "routing_and_preservation_regression": "pass: scripts/run_regression.py (7 routing cases, protected fixture, negative drift)",
@@ -16,7 +16,8 @@
     "github_publication": "pending repository creation and PR review",
     "luban_structure": "pass: check-skill-repo.sh 14 pass, 0 warnings, 0 failures",
     "repository_bootstrap": "pass: public repository created and main baseline pushed",
-    "feature_branch_push": "pass: feature branch pushed; PR pending"
+    "feature_branch_push": "pass: feature branch pushed; PR pending",
+    "remote_install": "pass: public main installed with npx skills add; old name absent from Codex global list"
   },
   "release_gate": "feature branch and pull request prepared; do not claim merged release",
   "repository_url": "https://github.com/DaXuanGarden/daxuan-academic-polisher",
